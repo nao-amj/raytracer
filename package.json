@@ -1,0 +1,29 @@
+{
+  "name": "three-hearts-raytracer",
+  "version": "1.0.0",
+  "description": "🌟 3D Ray Tracer created with love by Yuki & Miki 💕",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8080",
+    "start": "python3 -m http.server 8080",
+    "build": "echo 'Static files ready for deployment'",
+    "preview": "open http://localhost:8080"
+  },
+  "keywords": [
+    "raytracing",
+    "3d-graphics",
+    "javascript",
+    "webgl",
+    "computer-graphics",
+    "yuki-miki"
+  ],
+  "author": "Yuki & Miki with love 💕",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hirohashi/three-hearts-raytracer"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

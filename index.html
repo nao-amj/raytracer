@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Ray Tracer 💕</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        canvas {
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            background: #000;
+        }
+        .controls {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(45deg, #ff6b6b, #ffa726);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .info {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ 3D Ray Tracer ✨</h1>
+        <p>ユキ&ミキが愛情込めて作った3Dレンダリングエンジン 💕</p>
+        
+        <canvas id="raytraceCanvas" width="800" height="600"></canvas>
+        
+        <div class="controls">
+            <button onclick="render()">🎨 レンダリング開始</button>
+            <button onclick="randomScene()">🎲 ランダムシーン</button>
+            <button onclick="saveImage()">💾 画像保存</button>
+        </div>
+        
+        <div class="info">
+            <h3>レイトレーシングとは？ 🤔</h3>
+            <p>光の軌跡を逆算して、リアルな3D画像を生成する技術です。</p>
+            <p>鏡面反射、屈折、影など、物理的に正確な光の表現ができるよ〜💫</p>
+        </div>
+    </div>
+
+    <script src="raytracer.js"></script>
+</body>
+</html>
