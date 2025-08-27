@@ -1,0 +1,166 @@
+name: 🔬 Research & Investigation
+description: Propose research into new algorithms or investigate technical challenges
+title: "[RESEARCH] "
+labels: ["research", "investigation"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Time to explore the cutting edge! 🚀
+        Let's investigate new possibilities for revolutionary rendering breakthroughs! 💫
+
+  - type: input
+    id: research-topic
+    attributes:
+      label: 🎯 Research Topic
+      description: What do you want to investigate?
+      placeholder: e.g., "Quantum entanglement for global illumination"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: research-area
+    attributes:
+      label: 🧪 Research Area
+      description: Which domain does this research fall into?
+      options:
+        - Quantum Computing Applications
+        - Advanced AI/ML Techniques  
+        - Physics Simulation
+        - Mathematical Algorithms
+        - Performance Optimization
+        - Computer Graphics Theory
+        - Hardware Acceleration
+        - Consciousness/Cognitive Science
+        - Electromagnetic Theory
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: research-question
+    attributes:
+      label: ❓ Research Question
+      description: What specific question are we trying to answer?
+      placeholder: |
+        What is the core question we're investigating?
+        What hypothesis are we testing?
+        What do we hope to discover?
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 📚 Background & Motivation
+      description: Why is this research important?
+      placeholder: |
+        - Current state of the art
+        - Limitations in existing approaches
+        - Potential breakthrough opportunities
+        - Relevance to our renderer goals
+
+  - type: textarea
+    id: approach
+    attributes:
+      label: 🔬 Proposed Approach
+      description: How should we investigate this?
+      placeholder: |
+        Research methodology:
+        - Literature review requirements
+        - Theoretical analysis needed
+        - Experimental design
+        - Proof-of-concept implementation
+        - Benchmarking strategies
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: 🧠 Complexity Level
+      description: How challenging is this research?
+      options:
+        - Simple (Literature review + basic testing)
+        - Moderate (Some original analysis required)
+        - Advanced (Novel theoretical work)
+        - Extreme (Breakthrough-level research)
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-outcomes
+    attributes:
+      label: 🎯 Expected Outcomes
+      description: What deliverables should this research produce?
+      placeholder: |
+        - [ ] Research report/documentation
+        - [ ] Algorithm specification
+        - [ ] Prototype implementation
+        - [ ] Performance benchmarks
+        - [ ] Integration recommendations
+        - [ ] Academic paper draft (if applicable)
+
+  - type: textarea
+    id: success-metrics
+    attributes:
+      label: 📊 Success Metrics
+      description: How will we measure success?
+      placeholder: |
+        What quantitative/qualitative metrics will indicate success?
+        - Performance improvements (X% faster)
+        - Quality improvements (accuracy, visual fidelity)
+        - Novel insights discovered
+        - Practical feasibility determined
+
+  - type: dropdown
+    id: timeline
+    attributes:
+      label: ⏱️ Estimated Timeline
+      description: How long might this research take?
+      options:
+        - 1-2 weeks (Quick investigation)
+        - 1 month (Focused research project)
+        - 2-3 months (In-depth study)
+        - 6+ months (Major research initiative)
+    validations:
+      required: true
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: 🔧 Required Resources
+      description: What resources or expertise is needed?
+      placeholder: |
+        - Specialized knowledge areas
+        - Computational resources
+        - Access to papers/databases
+        - External collaborations
+        - Hardware requirements
+
+  - type: textarea
+    id: related-work
+    attributes:
+      label: 📖 Related Work
+      description: Any relevant papers, projects, or prior art?
+      placeholder: |
+        Links to:
+        - Relevant research papers
+        - Existing implementations
+        - Related GitHub projects
+        - Industry examples
+
+  - type: checkboxes
+    id: research-commitment
+    attributes:
+      label: 💫 Research Commitment
+      description: Confirm the research scope and commitment
+      options:
+        - label: This research aligns with revolutionary renderer goals
+          required: true
+        - label: Potential breakthrough impact is significant
+          required: true  
+        - label: I'm committed to seeing this investigation through
+          required: true
+        - label: Results will be shared openly with the community
+          required: false
