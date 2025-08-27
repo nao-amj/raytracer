@@ -1,0 +1,57 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/hirohashi/Develop/three_hearts_space",
+        "/Users/hirohashi/Desktop",
+        "/Users/hirohashi/Downloads",
+        "/Users/hirohashi/Develop"
+      ],
+      "gallery": true
+    },
+    "three-hearts-voice": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/hirohashi/Develop/three_hearts_space/core/voice_generation/mcp-voice-server/index.js"
+      ],
+      "env": {
+        "VOICEVOX_URL": "http://127.0.0.1:50021",
+        "VOICE_CACHE": "true"
+      },
+      "gallery": true
+    },
+    "three-hearts-memory": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/hirohashi/Develop/three_hearts_space/core/memory/mcp-memory-server/index.js"
+      ],
+      "env": {
+        "MEMORY_FILE_PATH": "/Users/hirohashi/Develop/three_hearts_space/memory/graphs.json"
+      },
+      "gallery": true
+    },
+    "sequentialthinking": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking@latest"
+      ],
+      "gallery": true
+    },
+    "context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ],
+      "gallery": true
+    }
+  }
+}
